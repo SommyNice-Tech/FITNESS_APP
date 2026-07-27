@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SommyNice Fitness</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Playwrite+NZ+Basic+Guides&family=Playwrite+NZ+Basic:wght@100..400&family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <!-- ============ HERO SECTION ============ -->
+
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#"> <img src="images/my logo.png" class="logo" /></a>
+        </div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#trainers">Trainers</a></li>
+          <li><a href="#reviews">Membership</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <i class="fas fa-bars"></i>
+      </nav>
+    </header>
+
+    <!-- -----------hero section--------- -->
+    <section class="hero" id="home">
+      <!-- Fullscreen video background -->
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="images/hero.png"
+        aria-hidden="true"
+      >
+        <!-- Mobile-optimised SD source first for faster load on phones -->
+        <source
+          src="https://videos.pexels.com/video-files/7991579/7991579-sd_640_360_25fps.mp4"
+          media="(max-width: 768px)"
+          type="video/mp4"
+        />
+        <!-- Primary HD sources for desktop -->
+        <source
+          src="https://videos.pexels.com/video-files/6534832/6534832-uhd_2560_1440_25fps.mp4"
+          type="video/mp4"
+        />
+        <source
+          src="https://videos.pexels.com/video-files/4065426/4065426-uhd_2560_1440_30fps.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>SommyNice Fitness Gym</h1>
+        <p>
+          Get fit and healthy with our expert trainers <br />
+          and state-of-the-art equipment.
+        </p>
+        <p>
+          Train with the best. Build strength, confidence, and discipline at
+          SommyNice Fitness.
+        </p>
+        <div class="hero-buttons">
+          <a href="#" class="btn join">Join Now</a>
+          <a href="#" class="btn learn">Book Free Trial</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
