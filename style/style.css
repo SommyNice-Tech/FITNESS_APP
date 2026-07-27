@@ -251,3 +251,118 @@ nav .fas {
 .about-btn {
     margin-top: 1rem;
 }
+
+/* -----------services------- */
+#services {
+    padding: 6rem;
+    background: #000;
+}
+
+#services h2 {
+    font-family: "Cormorant Garamond", serif;
+    color: #e50914;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    gap: 2rem;
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #fff;
+}
+
+.service-card p {
+    font-family: monospace;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* ── Trainers Section ── */
+#trainers {
+    padding: 6rem 4rem;
+    background: #060606;
+}
+
+#trainers h2 {
+    font-family: "Cormorant Garamond", serif;
+    color: #e50914;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.trainers-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.trainers-content {
+    background: #f1f1f1;
+    border-radius: 20px;
+    padding: 2rem 1.5rem;
+    color: #000;
+    text-align: center;
+    transition: all ease 0.25s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.trainers-content:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(229, 9, 20, 0.2);
+}
+
+.trainers-content i {
+    color: #25d366;
+    padding: 5px;
+    font-size: 26px;
+    margin-top: 0.5rem;
+}
+
+.trainers-content h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.15rem;
+    color: #111;
+}
+
+.trainers-content p {
+    font-size: 0.88rem;
+    color: #5c5959;
+    line-height: 1.65;
+    margin: 0;
+}
+
+.trainers-content img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #e50914;
+    margin-bottom: 0.5rem;
+    flex-shrink: 0;
+}
+
+.leader-role {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #d7776c;
+    margin-bottom: 0.75rem;
+}
