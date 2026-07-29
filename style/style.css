@@ -798,179 +798,466 @@ nav .fas {
 
 /* Testimonial Carousel */
 #testimonials {
-    padding: 6rem 2rem;
-    background: #0d0d0d;
-    text-align: center;
+  padding: 6rem 2rem;
+  background: #0d0d0d;
+  text-align: center;
 }
 
 .testimonials-header {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .testimonials-header h2 {
-    font-family: "Cormorant Garamond", serif;
-    color: #e50914;
-    font-size: 2.4rem;
-    margin-bottom: 0.75rem;
+  font-family: "Cormorant Garamond", serif;
+  color: #e50914;
+  font-size: 2.4rem;
+  margin-bottom: 0.75rem;
 }
 
 .testimonials-header p {
-    color: #888;
-    font-size: 1rem;
-    max-width: 540px;
-    margin: 0 auto;
+  color: #888;
+  font-size: 1rem;
+  max-width: 540px;
+  margin: 0 auto;
 }
 
 .testimonials-carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.25rem;
-    max-width: 860px;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  max-width: 860px;
+  margin: 0 auto;
 }
 
 .carousel-track {
-    flex: 1;
-    overflow: hidden;
-    min-height: 300px;
-    display: flex;
-    align-items: center;
+  flex: 1;
+  overflow: hidden;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
 }
 
 .testimonial-slide {
-    display: none;
-    width: 100%;
-    animation: tsSlide 0.5s ease forwards;
+  display: none;
+  width: 100%;
+  animation: tsSlide 0.5s ease forwards;
 }
 
 .testimonial-slide.active {
-    display: block;
+  display: block;
 }
 
 @keyframes tsSlide {
-    from {
-        opacity: 0;
-        transform: translateX(28px);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(28px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .testimonial-card {
-    background: linear-gradient(135deg, #1a1a1a 0%, #222 100%);
-    border: 1px solid rgba(229, 9, 20, 0.18);
-    border-radius: 22px;
-    padding: 2.5rem;
-    text-align: left;
-    position: relative;
-    transition: transform 0.3s, box-shadow 0.3s;
+  background: linear-gradient(135deg, #1a1a1a 0%, #222 100%);
+  border: 1px solid rgba(229, 9, 20, 0.18);
+  border-radius: 22px;
+  padding: 2.5rem;
+  text-align: left;
+  position: relative;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .testimonial-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(229, 9, 20, 0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(229, 9, 20, 0.12);
 }
 
 .testimonial-card::before {
-    content: '"';
-    position: absolute;
-    top: 0.75rem;
-    right: 1.75rem;
-    font-size: 7rem;
-    color: rgba(229, 9, 20, 0.1);
-    font-family: Georgia, serif;
-    line-height: 1;
-    pointer-events: none;
+  content: '"';
+  position: absolute;
+  top: 0.75rem;
+  right: 1.75rem;
+  font-size: 7rem;
+  color: rgba(229, 9, 20, 0.1);
+  font-family: Georgia, serif;
+  line-height: 1;
+  pointer-events: none;
 }
 
 .testimonial-stars {
-    display: flex;
-    gap: 3px;
-    margin-bottom: 1.2rem;
-    color: #ffd700;
-    font-size: 1rem;
+  display: flex;
+  gap: 3px;
+  margin-bottom: 1.2rem;
+  color: #ffd700;
+  font-size: 1rem;
 }
 
 .testimonial-text {
-    color: #bbb;
-    font-size: 0.97rem;
-    line-height: 1.85;
-    margin-bottom: 1.75rem;
-    font-style: italic;
+  color: #bbb;
+  font-size: 0.97rem;
+  line-height: 1.85;
+  margin-bottom: 1.75rem;
+  font-style: italic;
 }
 
 .testimonial-author {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .testimonial-img {
-    width: 58px;
-    height: 58px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #e50914;
-    flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e50914;
+  flex-shrink: 0;
 }
 
 .testimonial-info h4 {
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    margin: 0 0 0.2rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 0.2rem;
 }
 
 .testimonial-info span {
-    color: #e50914;
-    font-size: 0.82rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
+  color: #e50914;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .carousel-btn {
-    background: #e50914;
-    color: #fff;
-    border: none;
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    font-size: 1.1rem;
-    cursor: pointer;
-    flex-shrink: 0;
-    transition: all 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: #e50914;
+  color: #fff;
+  border: none;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel-btn:hover {
-    background: #b00610;
-    transform: scale(1.1);
+  background: #b00610;
+  transform: scale(1.1);
 }
 
 .carousel-dots {
-    display: flex;
-    justify-content: center;
-    gap: 0.6rem;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 2rem;
 }
 
 .carousel-dot {
-    width: 10px;
-    height: 10px;
-    background: #444;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.3s;
+  width: 10px;
+  height: 10px;
+  background: #444;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .carousel-dot.active {
-    background: #e50914;
-    transform: scale(1.35);
+  background: #e50914;
+  transform: scale(1.35);
+}
+
+/* -----------BMI CALCULATOR------------ */
+#bmi {
+  padding: 6rem 2rem;
+  background: #111;
+}
+
+.bmi-wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.bmi-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.bmi-header h2 {
+  font-family: "Cormorant Garamond", serif;
+  color: #e50914;
+  font-size: 2.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.bmi-header p {
+  color: #888;
+  font-size: 1rem;
+}
+
+.bmi-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.bmi-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.bmi-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bmi-field label {
+  color: #ccc;
+  font-size: 0.92rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.bmi-field label i {
+  color: #e50914;
+}
+
+.bmi-field input {
+  background: #1c1c1c;
+  border: 1px solid #3a3a3a;
+  border-radius: 10px;
+  padding: 14px 18px;
+  color: #fff;
+  font-size: 1rem;
+  width: 100%;
+  transition: border-color 0.3s;
+  flex: unset;
+  margin: 0;
+  cursor: text;
+}
+
+.bmi-field input:focus {
+  border-color: #e50914;
+  outline: none;
+  background: #1f1f1f;
+}
+
+.bmi-calc-btn {
+  background: linear-gradient(135deg, #e50914, #b00610);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.bmi-calc-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(229, 9, 20, 0.35);
+}
+
+.bmi-result {
+  margin-top: 2rem;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 18px;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+}
+
+.bmi-score-display {
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+}
+
+.bmi-badge {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.bmi-badge.underweight {
+  background: #3498db;
+  color: #fff;
+}
+
+.bmi-badge.normal {
+  background: #27ae60;
+  color: #fff;
+}
+
+.bmi-badge.overweight {
+  background: #f39c12;
+  color: #fff;
+}
+
+.bmi-badge.obese {
+  background: #e50914;
+  color: #fff;
+}
+
+.bmi-advice-text {
+  color: #999;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  font-style: italic;
+  max-width: 380px;
+}
+
+.bmi-scale-bar {
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  height: 38px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.scale-seg {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  line-height: 1.3;
+  text-align: center;
+  padding: 2px;
+}
+
+.seg-uw {
+  background: #3498db;
+}
+
+.seg-nm {
+  background: #27ae60;
+}
+
+.seg-ow {
+  background: #f39c12;
+}
+
+.seg-ob {
+  background: #e50914;
+}
+
+/* BMI Info side */
+.bmi-info-side {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 18px;
+  padding: 2rem;
+}
+
+.bmi-info-side h3 {
+  font-family: "Cormorant Garamond", serif;
+  color: #e50914;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.bmi-ranges {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-bottom: 1.75rem;
+}
+
+.bmi-range-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.range-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.uw-dot {
+  background: #3498db;
+}
+
+.nm-dot {
+  background: #27ae60;
+}
+
+.ow-dot {
+  background: #f39c12;
+}
+
+.ob-dot {
+  background: #e50914;
+}
+
+.bmi-range-item strong {
+  display: block;
+  color: #fff;
+  font-size: 0.95rem;
+  margin-bottom: 0.15rem;
+}
+
+.bmi-range-item p {
+  color: #777;
+  font-size: 0.83rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.bmi-expert-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: rgba(229, 9, 20, 0.08);
+  border: 1px solid rgba(229, 9, 20, 0.2);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.bmi-expert-note i {
+  color: #e50914;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.bmi-expert-note p {
+  color: #aaa;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin: 0;
 }
